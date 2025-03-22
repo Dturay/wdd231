@@ -10,7 +10,7 @@ body {
   max-width: 360px;
   margin: auto;
   display: grid;
-  grid-template: 1fr 0.3fr auto 0.6fr / 1fr;
+  grid-template: 1fr 0fr auto 0.6fr / 1fr;
 }
 
 header {
@@ -80,7 +80,6 @@ header span {
   border: none;
   color: white;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 main {
