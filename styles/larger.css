@@ -1,0 +1,67 @@
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  body {
+    max-width: 1000px;
+  }
+
+  #menu-toggle {
+    display: none; /* Hide toggle button for larger screens */
+  }
+
+  #navigation {
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(7, 2, 75);
+    margin-bottom: 0.5rem;
+    box-shadow: none;
+  }
+
+  #navigation a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(209, 209, 209);
+    padding: 3px;
+    margin: 0 10px;
+  }
+
+  #navigation a:hover {
+    font-weight: 200;
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+
+  #close-menu {
+    display: none; /* Hide close button */
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns - first is double the size of the second */
+    grid-template-rows: auto 1fr; /* Auto height for the first row and fill the second row */
+    gap: 10px; /* Space between grid items */
+    padding: 20px; /* Padding for main */
+  }
+
+  h1 {
+    grid-column: 1 / -1; /* Makes the header span all columns */
+  }
+
+  .course-work {
+    grid-column: 1; /* First column for course work */
+    padding: 20px;
+  }
+
+  .state {
+    grid-column: 2; /* Second column for state */
+    padding: 20px;
+  }
+
+  .certificate {
+    grid-column: 1 / -1; /* Full width of the main for certificate */
+    padding: 20px;
+  }
+}
