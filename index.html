@@ -6,15 +6,18 @@
     <meta name="description" content="Course home page for WDD231" />
     <meta name="author" content="David Turay" />
     <title>Course Home Page WDD231 - David Turay</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -25,7 +28,7 @@
       <a href="index.html">Home</a>
       <a href="#">Chamber</a>
       <a href="https://github.com/dturay">GitHub Profile</a>
-      <a href="https://linkedin.com/in/your-profile">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/david-turay-a97002228/">LinkedIn</a>
     </nav>
     <main>
       <h1>Course Home Page WDD231</h1>
@@ -39,20 +42,18 @@
       </section>
       <section class="state">
         <h2>Freetown, Sierra Leone</h2>
-        <img src="images/state.jpeg" alt="Home town" />
+        <img src="images/state.jpg" alt="Home town" />
         <p>Beautiful beaches</p>
       </section>
       <section class="certificate">
-        <h2>Course Filter</h2>
-        <div class="filter-container">
-          <label for="course-filter">Choose which courses to display:</label>
-          <select id="course-filter">
-            <option value="all">All Courses</option>
-            <option value="CSE">CSE Courses</option>
-            <option value="WDD">WDD Courses</option>
-          </select>
+        <h2>Web and Computer Programing Certificate</h2>
+        <div class="button-container">
+          <button onclick="filterCourses('all')">All Courses</button>
+          <button onclick="filterCourses('WDD')">WDD Courses</button>
+          <button onclick="filterCourses('CSE')">CSE Courses</button>
         </div>
         <div id="course-list"></div>
+        <div id="total-credits"></div>
       </section>
     </main>
     <footer>
