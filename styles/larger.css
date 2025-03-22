@@ -1,6 +1,7 @@
 /* Media query for larger screens */
 @media (min-width: 768px) {
   body {
+    font-family: "Roboto", sans-serif;
     max-width: 1000px;
   }
 
