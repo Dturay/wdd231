@@ -1,0 +1,232 @@
+/* Normalize or Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Base font size */
+}
+
+/* Body Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #333; /* Text color */
+  background-color: #edc5eeb0; /* Background color */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically (requires height) */
+  min-height: 100vh; /* Minimum height of the viewport */
+}
+
+/* Header Styles */
+header {
+  background-color: #2b015c; /* Primary color */
+  color: #fff; /* Text color in header */
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+#menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+#navigation {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgb(1, 7, 15);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+#navigation a {
+  color: #38058bcb;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding: 1px;
+  border: 1px solid #9b5dffcb;
+  width: 100%;
+  background-color: white;
+  font-weight: 600;
+}
+
+#navigation.active {
+  display: flex; /* Show navigation when active */
+}
+
+#close-menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#toggle-view:hover {
+  background-color: #218838; /* Darker shade on hover */
+}
+
+/* Directory Content Styles */
+#directory-content {
+  display: flex;
+  flex-wrap: wrap; /* Wraps cards in the container */
+  justify-content: space-between; /* Space between cards */
+}
+
+/* Member Card Styles */
+.member-card {
+  background: #9b5dffcb; /* Card background */
+  border: 1px solid #ccc; /* Card border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px;
+  margin: 1em auto;
+  width: calc(33.33% - 20px); /* Sets three cards per row */
+  max-width: 300px; /* Optional max width for cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s; /* Smooth scaling */
+  text-align: center;
+}
+
+.member-card:hover {
+  transform: scale(1.05); /* Scale on hover */
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto; /* Responsive image */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.member-card h2 {
+  margin-top: 10px;
+  font-size: 1.5em; /* Title font size */
+  color: #2b015c;
+}
+
+.member-card p {
+  margin: 5px 0; /* Spacing for paragraphs */
+  color: white;
+  font-weight: 600;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2b015c; /* Footer background */
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1500px) {
+  .member-card {
+    width: calc(50% - 20px); /* Two cards per row */
+  }
+  #menu-toggle {
+    display: none; /* Hide toggle button for larger screens */
+  }
+
+  #navigation {
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  #navigation a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(209, 209, 209);
+    padding: 3px;
+    margin: 5px 10px;
+    background-color: transparent;
+    border: 0;
+  }
+
+  #navigation a:hover {
+    font-weight: 200;
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+
+  #close-menu {
+    display: none; /* Hide close button */
+  }
+}
+
+@media (max-width: 600px) {
+  .member-card {
+    width: calc(100% - 20px); /* One card per row */
+  }
+
+  #menu-toggle {
+    display: none; /* Hide toggle button for larger screens */
+  }
+
+  #navigation {
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  #navigation a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(209, 209, 209);
+    padding: 3px;
+    margin: 5px 10px;
+    background-color: transparent;
+    border: 0;
+  }
+
+  #navigation a:hover {
+    font-weight: 200;
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+
+  #close-menu {
+    display: none; /* Hide close button */
+  }
+}

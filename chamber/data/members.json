@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Boutique Shop",
+    "address": "123 Main Bass St, Brookfields",
+    "phone": "555-1234",
+    "website": "http://boutiqueshop.com",
+    "image": "images/boutique.jpg",
+    "membership_level": 2,
+    "extra_info": "Specializes in handmade clothing."
+  },
+  {
+    "name": "Local Café",
+    "address": "456 Market St, Brookfields",
+    "phone": "555-5678",
+    "website": "http://localcafe.com",
+    "image": "images/cafe.jpeg",
+    "membership_level": 3,
+    "extra_info": "Offers a variety of local coffee blends."
+  },
+  {
+    "name": "Weekes Supermarket",
+    "address": "103 Market St, Brookfields",
+    "phone": "555-5281",
+    "website": "http://weekessupermarket.com",
+    "image": "images/supermarket.jpeg",
+    "membership_level": 1,
+    "extra_info": "Offers a variety of groceries on retails."
+  },
+  {
+    "name": "Pasture Dessert",
+    "address": "101 Main St, Brookfields",
+    "phone": "555-4387",
+    "website": "http://pasturedessert.com",
+    "image": "images/dessert.jpeg",
+    "membership_level": 3,
+    "extra_info": "Offers a variety of deserts."
+  },
+  {
+    "name": "Priceless Looks",
+    "address": "321 Main St, Brookfields",
+    "phone": "555-1479",
+    "website": "http://priceless.com",
+    "image": "images/priceless.jpeg",
+    "membership_level": 3,
+    "extra_info": "Specializes in fashion attires."
+  },
+  {
+    "name": "Moments Photography",
+    "address": "456 Market St, Brookfields",
+    "phone": "555-0468",
+    "website": "http://moments.com",
+    "image": "images/moments.jpeg",
+    "membership_level": 2,
+    "extra_info": "Specializes in photo and videography."
+  },
+  {
+    "name": "Ez Transports",
+    "address": "214 Main St, Brookfields",
+    "phone": "555-8943",
+    "website": "http://Eztransports.com",
+    "image": "images/Eztransports.jpeg",
+    "membership_level": 1,
+    "extra_info": "Offers road transport services."
+  },
+  {
+    "name": "DJ Oasis",
+    "address": "304 Market St, Brookfields",
+    "phone": "555-2642",
+    "website": "http://oasis.com",
+    "image": "images/oasis.jpeg",
+    "membership_level": 2,
+    "extra_info": "A relazation center."
+  }
+]
