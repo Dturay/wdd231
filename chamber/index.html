@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to the Timbuktu Chamber of Commerce Home Page"
+    />
+    <meta name="author" content="David Turay" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:url" content="index.html" />
+    
+
+    <title>Timbuktu Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Timbuktu Chamber of Commerce</h1>
+      <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <picture class="hero-img">
+          <source
+            srcset="images\hero-image.jpg"
+            media="(min-width: 1000px)"
+          />
+          <source srcset="images/hero-medium.webp" media="(min-width: 500px)" />
+          <img
+            src="images/hero-small.webp"
+            alt="Chamber of Commerce Hero Image"
+            width="500"
+            height="125"
+          />
+        </picture>
+        <h2>Welcome to the Timbuktu Chamber of Commerce</h2>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </section>
+
+      <section id="events">
+        <h3>Current Events</h3>
+        <p>Check out our upcoming events to connect with local businesses!</p>
+      </section>
+
+      <section id="weather">
+        <h3>Current Weather</h3>
+        <div id="weather-data">
+          <!-- Weather data will be populated here using JavaScript -->
+        </div>
+      </section>
+
+      <section id="spotlights">
+        <h3>Member Spotlights</h3>
+        <div id="spotlight-container">
+          <!-- Spotlight advertisements will be dynamically loaded here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>©<span id="copyright-year"></span> David Turay, WDD 231</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

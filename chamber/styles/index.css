@@ -1,0 +1,173 @@
+/* Normalize or Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #fefefe; /* White */
+    --secondary-color: #702963; /* Purple */
+    --accent-color: #000000; /* Black */
+    --background-color: #dbdbdb; /* Light grey */
+}
+
+html {
+    font-size: 16px; /* Base font size */
+}
+
+/* Body Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    color: #333; /* Text color */
+    background-color: #edc5eeb0; /* Background color */
+}
+
+/* Header Styles */
+header {
+    background-color: var(--secondary-color);
+    color: #fff; /* Text color in header */
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+#navigation {
+    display: flex;
+    justify-content: center;
+}
+
+#navigation a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 8px 15px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#navigation a:hover {
+    background-color: #38058b; /* Darker shade on hover */
+}
+
+/* Hero Section Styles */
+#hero {
+    text-align: center;
+    position: relative;
+}
+
+#hero img {
+    width: 100%; /* Responsive image */
+    height: auto;
+}
+
+#hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2em; /* Font size for hero text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #dbd3d3; /* Light grey on hover */
+}
+
+/* Events, Weather, and Spotlight Sections */
+section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#weather-data {
+    margin-top: 10px;
+}
+
+/* Member Card Styles */
+#spotlight-container {
+    display: flex;
+    flex-wrap: wrap; /* Wraps cards in the container */
+    justify-content: space-around; /* Space between cards */
+}
+
+.member-card {
+    background: #9b5dffcb; /* Card background */
+    border: 1px solid #ccc; /* Card border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px;
+    margin: 1em;
+    width: calc(33% - 20px); /* Sets three cards per row */
+    max-width: 300px; /* Optional max width for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s; /* Smooth scaling */
+    text-align: center;
+}
+
+.member-card:hover {
+    transform: scale(1.05); /* Scale on hover */
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto; /* Responsive image */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.member-card h2 {
+    margin-top: 10px;
+    font-size: 1.5em; /* Title font size */
+    color: #2b015c;
+}
+
+.member-card p {
+    margin: 5px 0; /* Spacing for paragraphs */
+    color: white;
+    font-weight: 600;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--secondary-color); /* Footer background */
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1500px) {
+    .member-card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .member-card {
+        width: 100%; /* One card per row */
+    }
+}

@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+/* color palette*/
+
+:root{
+  --primary-color: #fefefe /*white*/
+  --secondary-color: #702963 /*purple*/
+  --accent-color: #000000 /*black*/
+  --background-color: #dbdbdb /*white*/
+}
+
 html {
   font-size: 16px; /* Base font size */
 }
@@ -205,7 +214,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: grey;
     width: 100%;
     box-shadow: none;
   }
@@ -213,7 +222,7 @@ footer {
   #navigation a {
     font-size: 1rem;
     font-weight: 600;
-    color: rgb(209, 209, 209);
+    color: #2b015c;
     padding: 3px;
     margin: 5px 10px;
     background-color: transparent;
@@ -221,9 +230,9 @@ footer {
   }
 
   #navigation a:hover {
-    font-weight: 200;
+    font-weight: 900;
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: white;
   }
 
   #close-menu {

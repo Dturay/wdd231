@@ -4,7 +4,7 @@
     "address": "123 Main Bass St, Brookfields",
     "phone": "555-1234",
     "website": "http://boutiqueshop.com",
-    "image": "images/boutique.jpg",
+    "image": "images/priceless.jpeg",
     "membership_level": 2,
     "extra_info": "Specializes in handmade clothing."
   },
@@ -13,7 +13,7 @@
     "address": "456 Market St, Brookfields",
     "phone": "555-5678",
     "website": "http://localcafe.com",
-    "image": "images/cafe.jpeg",
+    "image": "images/oasis.jpeg",
     "membership_level": 3,
     "extra_info": "Offers a variety of local coffee blends."
   },
@@ -31,7 +31,7 @@
     "address": "101 Main St, Brookfields",
     "phone": "555-4387",
     "website": "http://pasturedessert.com",
-    "image": "images/dessert.jpeg",
+    "image": "images/supermarket.jpeg",
     "membership_level": 3,
     "extra_info": "Offers a variety of deserts."
   },
