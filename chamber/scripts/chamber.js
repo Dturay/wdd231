@@ -95,3 +95,14 @@ function displayLastModified() {
 fetchMembers();
 displayYear();
 displayLastModified();
+
+// Set the timestamp value to the current date and time
+      document.getElementById("timestamp").value = new Date().toISOString();
+
+      function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
+      }
+
+      // Close modals feature and fill with content
+      // Assume that the modals will be filled and displayed
