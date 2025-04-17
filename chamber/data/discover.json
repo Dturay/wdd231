@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Freetown Amuesment Park",
+    "address": "Hill Station, Freetown, Sierra Leone",
+    "description": "A lush green national park beaming with wildlife and scenic views, perfect for hiking and nature walks.",
+    "image": "images/amuesment_park.webp"
+  },
+  {
+    "name": "Cotton Tree",
+    "address": "George Street, Freetown, Sierra Leone",
+    "description": "A historical landmark in the heart of Freetown, symbolizing unity and culture among the people.",
+    "image": "images/cotton_tree.webp"
+  },
+  {
+    "name": "Jumbo Beach",
+    "address": "Aberdeen, Freetown, Sierra Leone",
+    "description": "A popular beach destination known for its white sands and vibrant atmosphere, perfect for relaxation and water sports.",
+    "image": "images/jumbo_beach.webp"
+  },
+  {
+    "name": "Prince of Walse School",
+    "address": "Kingtom, Freetown, Sierra Leone",
+    "description": "A historic school with a rich legacy, widely regarded as the best in the country, known for its academic excellence and contribution to education in Sierra Leone.",
+    "image": "images/prince_of_wales.webp"
+  },
+  {
+    "name": "Lumley Beach",
+    "address": "Lumley, Freetown, Sierra Leone",
+    "description": "A vibrant beach community known for its lively restaurants and stunning sunsets, a great spot for social gatherings.",
+    "image": "images/lumley_beach.webp"
+  },
+  {
+    "name": "Freetown Museum",
+    "address": "1-2 Garrison Street, Freetown, Sierra Leone",
+    "description": "A small museum showcasing the rich history and culture of Sierra Leone, including artifacts and exhibitions.",
+    "image": "images/freetown_meseum.webp"
+  },
+  {
+    "name": "St. John's Maroon Church",
+    "address": "Wilberforce, Freetown, Sierra Leone",
+    "description": "A historic church notable for its architecture and important role in the religious community of Freetown.",
+    "image": "images/st_johns_church.webp"
+  },
+  {
+    "name": "Aberdeen Memorial",
+    "address": "Aberdeen Road, Freetown, Sierra Leone",
+    "description": "A memorial site commemorating the fallen heroes of Sierra Leone, a place for reflection and remembrance.",
+    "image": "images/aberdeen_memorial.webp"
+  }
+]

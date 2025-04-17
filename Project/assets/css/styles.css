@@ -1,0 +1,308 @@
+/* Global Styles */
+:root {
+    --primary-color: #bd0303; /* Teal */
+    --accent-color: #FF6F61; /* Coral */
+    --background-color: #F9F9F9; /* Light Beige */
+    --text-color: #2C3E50; /* Dark Slate Gray */
+    --card-background: #FFFFFF; /* White Background for Cards */
+    --button-hover-color: #b14202; /* Darker Teal */
+    --border-radius: 8px; /* Rounded Corners */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+    --header-height: 60px; /* Fixed height for header */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    position: relative;
+    top: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color); /* Highlight Color */
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/hero-bg.jpeg') no-repeat center center/cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    background-color: rgba(20, 19, 19, 0.4);
+    margin: 1rem 0;
+    z-index: 2;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 2;
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+/* Main Content Area */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Services Section */
+h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.services-overview {
+    margin: 2rem 0;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 15px;
+    width: 240px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials {
+    margin: 2rem 0;
+}
+
+.testimonials blockquote {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.newsletter {
+    margin: 2rem 0;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    width: 300px;
+    margin-right: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter input[type="email"]:focus {
+    border-color: var(--primary-color);
+}
+
+.newsletter button {
+    padding: 12px;
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.newsletter button:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--button-hover-color);
+    transform: translateY(-2px);
+}
+
+/* Box for additional information */
+.info-box {
+    background-color: var(--card-background);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.info-box h3 {
+    margin-top: 0;
+}
+
+.info-box p {
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+}
+
+footer a {
+    color: rgb(248, 248, 253);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+footer a:hover {
+    color: rgb(0, 183, 255);
+    font-weight: 700;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .services-container {
+        padding: 0 10px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 220px;
+    }
+}
